@@ -376,23 +376,18 @@
     text-decoration: none;
     color:#f42
   }
-  .hidden-mobile{
-    display: none;
-  }
 
   @media (min-width:770px){
     .header-images-container {
       height: 500px;
+      max-width: 100vw;
       display: grid;
       grid-template-columns: 70% 1fr;
       grid-template-rows: repeat(2,30%);
-      grid-column-gap: 0px;
-      grid-row-gap: 0px;
     }
     .container1 {
       grid-area: 1/1/3/2;
       height: 425px;
-      /* border: 2px solid red; */
     }
     .container-display{
       grid-area: 1/2/2/3;
@@ -403,12 +398,10 @@
     }
     .container2{
       grid-area: 1/2/2/3;
-      /* border: 2px solid red; */
       height: calc(405px/2);
     }
     .container3{
       grid-area: 2/2/3/3;
-      /* border: 2px solid red; */
       height: calc(405px/2);
     }
     .container > div {
@@ -425,7 +418,6 @@
     }
     .big-container > div {
       margin-top: 17rem;
-      /* border: 1px solid black; */
       padding-left: 20px;
       padding-right: 20px;
     }
@@ -437,7 +429,6 @@
       font-size: 14px;
       color: grey;
       font-weight: bold;
-    
     }
     .hidden-desktop{
       display: none;
@@ -461,9 +452,11 @@
       font-size: 15px;
       font-weight: 700;
     }
+
+    /* Latest New */
     .latest-news {
-      max-width: 1400px;
-      /* border: 1px solid black; */
+      z-index: 2;
+      max-width: 1300px;
       margin: 0 auto;
     }
     .latest-item > div {
@@ -474,20 +467,19 @@
       position: relative;
       font-weight: 900;
       font-size: 2rem; 
-      color: rgb(255, 0, 0); margin-bottom: 25px;
+      color: rgb(255, 0, 0); 
+      margin-bottom: 25px;
     }
     .latest-container{
       max-width: 2000px;
       flex-wrap: wrap;
       flex-direction: row;
       margin-right: 10px;
-      /* justify-content: center; */
     }
     .latest-item{
       max-width: 300px;
       display: inline-block;
       margin-left: 10px;
-      /* border: 1px solid red */
     }
     .latest-image{
       width: 100%;
@@ -499,12 +491,6 @@
       margin-left: 0;
       font-weight: 900;
       font-size: 1.1rem;
-      /* border: 1px solid black; */
-      /* padding: 0; */
-      /* margin-left: -20px; */
-    }
-    .latest-item > div {
-
     }
     .latest-p{
       font-size: 10px;
@@ -513,7 +499,9 @@
     /* index.Co latest funding */
     .index-co-container{
       flex-direction: row;
-      z-index: inherit;
+      z-index: 2;
+      max-width: 1300px;
+      margin: 0 auto;
     }
     .index-header{
       display: flex;
@@ -536,10 +524,20 @@
     .card-container{
       display: flex;
       flex-wrap: wrap;
+      border: 10px solid red;
+      max-width: 90%;
+      margin: 0 auto;
     }
     .card{
-      max-width: 30%;
+      max-width: calc(90%/3);
       margin: 10px;
+      border: 1px solid black;
+      max-height: 100vh;
+    }
+    .card-image>div>*{
+      color: black;
+      position: absolute;
+      top: 100px;
     }
 }
 
@@ -551,5 +549,8 @@
   }
   .latest-item > div {
     margin-left: 20px;
+  }
+  .hidden-mobile{
+    display: none;
   }
 }
