@@ -1,3 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@700&family=Space+Grotesk:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Noto+Sans+JP:wght@700&family=Space+Grotesk:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400&family=Noto+Sans+JP:wght@700&family=Space+Grotesk:wght@600&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -78,18 +83,10 @@
     background-size: cover;
     margin: 10px;
     background:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.7)), url('../assert/images/header_image1.png');
-
-    /* background-image: url('../assert/images/header_image1.png'); */
   }
   .container > div {
-    /* position: relative; */
     padding: 20px;
   }
-  /* .container h2  {
-    font-size: 2rem;
-    /* margin-top: 9rem; */
-    /* margin-bottom: 15px; */
-  } */
   .container p {
     color: lightgrey;
     font-weight: bolder;
@@ -107,59 +104,55 @@
     height: 300px;
     background-repeat: no-repeat;
     background-position: center;
-
-    /* background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)); */
-    /* background-color: black; */
     margin: 10px;
-  }
-  .container {
-    /* background-image: linear-gradient(rgb(245, 228, 228), grey); */
-
   }
   .latest-container {
     display: flex;
-    flex-direction: column;
-    /* margin-left: 20px; */
-  
+    flex-direction: column;  
   }
   .latest-item {
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin-bottom: 20px;
-  
+    margin-bottom: 20px;  
   }
-  .latest-item > div {
-    /* margin-left: 20px; */
-  }
+
   .latest-image {
     width: 125px;
     height: 125px;
   }
+
   .latest-h2{
     font-size: 1.5rem; 
     margin-bottom: 20px;
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 900;
   }
   .latest-p{
     color: grey;
     font-size: 1.2rem;
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 900;
+
   }
   
   img {
     width: 100%;
   }
   
+  /* index.co */
   .index-sub-container {
     display: flex;
     flex-direction: column;
     height: 42vh;
     margin: 10px;
-    /* border: 0.5px solid lightgray; */
   }
+
   .sub-item-contain {
     height: 250px;
     margin-bottom: 10px;
   }
+
   .lower-block > p:nth-child(1) {
     margin-bottom: 5px;
   }
@@ -179,7 +172,6 @@
   .middle-block > div > p:nth-child(2) {
     font-size: 0.8rem;
     color: grey;
-    /* font-weight: 900; */
   }
   .sub-item-contain > div:nth-child(1) {
     width: 100%;
@@ -208,8 +200,9 @@
     color: white; 
     position: relative; 
     padding: 12px; 
-    font-size: 1.5rem; 
+    font-size: 1.3rem; 
     font-weight: bolder;
+    font-family: 'Noto Sans JP', sans-serif;
   }
   .upper-block>img {
     width: 70px;
@@ -221,21 +214,24 @@
     margin-left: 100px; 
     padding-top: 20px;
   }
-  .middle-block>div>strong{
-    font-size: 1.5rem
-  }
   .middle-block>div>p{
     font-size: 16px;
+    padding: 3px ;
   }
   .lower-block{ 
     padding-top: 20px; 
     line-height: 1.5rem;
   }
   .lower-block>p{
-    padding-left:40px; 
+    font-family: 'Montserrat', sans-serif;
+    color: black;
+  }
+  .lower-block>p{
+    padding-left:20px;
+    font-size: small; 
   }
   .discription{
-    font-size: .8rem;
+    font-size: 2px;
   }
   .lower-block>hr{
     width: 100%;
@@ -247,8 +243,6 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    /* background:linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('../assert/images/image1.png'); */
-
   }
   .card1 {
     height: 500px;
@@ -320,11 +314,12 @@
     padding: 20px;
   }
   .card-image > h2  {
+    cursor: pointer;
     font-size: 2rem;
     margin-bottom: 15px;
   }
   .card-image > p {
-    color: lightgrey;
+    color: grey;
     font-weight: bolder;
     font-size: 1.2rem;
   }
@@ -344,6 +339,7 @@
     overflow: hidden;
   }
   .sub-card-container{
+    cursor: pointer;
     display: flex;
     width: 100%;
     margin: 0 auto;
@@ -381,21 +377,6 @@
   .card-point>ul>hr{
     width: 100%;
     color: lightgray;
-  }
-  li::before {
-    content: "•"; 
-    color: red;
-    margin-right: 3px;
-  }
-  li {
-    /* text-align: flex-start; */
-  }
-  li >div::before {
-    height: 10px;
-    content: "•"; 
-    color: red;
-    margin-right: 3px;
-    border: 1px solid black;
   }
 
   /* footer */
@@ -603,22 +584,25 @@
       max-width: calc(1/4);
       padding-bottom: 50px;
     }
+    .index-main>h2{
+      padding-left: 0;
+    }
     /* card section */
     .card-container{
       display: flex;
       flex-wrap: wrap;
-      /* border: 10px solid red; */
       max-width: 90%;
       margin: 40px auto;
     }
     .card{
       max-width: calc(90%/3);
       margin: 10px;
-      /* border: 1px solid black; */
       max-height: 100vh;
     }
     .card-image>div>h2{
+      cursor: pointer;
       position: relative;
+      display: inline;
       z-index: 100;
       font-size: 18px;
       font-weight: 700;
@@ -626,15 +610,18 @@
       top: 18px;
       left: 0;
     }
+    .card-image>div{
+      position: relative;
+      top: 100px;
+      left: 6px;
+      display: inline-block;
+    }
     .card-image>div>p{
       position: relative;
       z-index: 100;
       left: 0px;
       top: 15px;
       color: black;
-    }
-    .index-main>h2{
-      padding-left: 0;
     }
     .sub-card-container{
       width: 100%;
@@ -655,11 +642,10 @@
       margin-bottom: 30px;
       line-height: 1.2rem;
       font-size: small;
-      list-style: none;
-      list-style: #f42;
     }
-    .card-point>ul>li{
-      border: 1px solid red;
+    .card-point>ul{
+      max-width: 95%;
+      float: right;
     }
     .card-point>ul>li>p{
       text-align: justify;
@@ -670,6 +656,13 @@
       color: lightgray;
       height: 0.2px;
     }
+
+    /* hover effect */
+    .navigation-link>a:hover{
+        font-weight: 700;
+        color: black;
+    }
+
 }
 @media (max-width: 770px) {
   .container h2  {
@@ -683,4 +676,17 @@
   .hidden-mobile{
     display: none;
   }
+}
+.container1:hover,.container2:hover,.container3:hover{
+  opacity: 0.9;
+}
+.latest-h2:hover{
+  color: #f42;
+  text-decoration: underline;
+}
+.index-main>h2:hover,.index-link>a:hover,.index-main>h2:hover,.latest-news>h2:hover{
+  color: black;
+}
+.sub-header-card>h2:hover,.card-image>div>h2:hover{
+  text-decoration: underline;
 }
