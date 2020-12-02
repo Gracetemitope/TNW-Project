@@ -34,6 +34,12 @@ header {
   padding: 20px;
 }
 
+.container h2 {
+  color: white;
+  font-weight: bolder;
+  font-size: 2rem;
+}
+
 .container p {
   color: lightgrey;
   font-weight: bolder;
@@ -419,7 +425,7 @@ footer{
   margin: 10px;
 }
 
-.lower_container>div{
+.lower_container > div {
   width: 50%;
   margin: 15px auto;
 }
@@ -429,7 +435,7 @@ footer{
   flex-direction: column;
 }
 
-.index-link>a{
+.index-link > a {
   margin: 10px;
   text-decoration: none;
   color:#f42
