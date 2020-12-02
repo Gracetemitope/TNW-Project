@@ -7,7 +7,7 @@ Built With:
 
 HTML CSS
 
-Live Demo Link: https://gracetemitope.github.io/Positioning-project/
+Live Demo Link: https://gracetemitope.github.io/TNW-Project/
 
 Authors
 
