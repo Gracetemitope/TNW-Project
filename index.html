@@ -7,57 +7,141 @@
     <title>Document</title>
     <link rel="stylesheet" href="./css/style.css">
 
-    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/regular.min.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/74091f2b8e.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <!-- Navigation Bar -->
-    <nav class="navigation-bar">
-        <div class="left-container">
-            <img src="./assert/images/logo.png" alt="logo-image">
+    <header>
+        <div class="logo-container">
+        <label for="logo">
+            <a href="#">
+        <img src="./assert/images/logo.png" alt="logo-image" width="80px" height="50px" id="logo">
+    </a>
+        </label>
+    </div>
+    <div class="border-left"></div>
+        <div class="toggle">
+            <a href="#"><i class="fa fa-search" style="color: grey;"></i></a>
+        <a href="#"><i class="fa fa-bars"></i></a> 
         </div>
-        <div class="right-container">
-            <i class="fa fa-search"></i>
-            <i class="fa fa-bars"></i>
-        </div>
-    </nav>
+</header>
+<main>
     <!-- Main Body -->
     <div class="header-images-container">
-        <div class="image-container image1">
-            <img src="./assert/images/header_image1.png"  alt="image">
-            <figcaption class="image-caption">
-            <h2>
-                Study: Security flaw could allow hackers to trick lab scientists into making viruses
-            </h2>
-            <p>by Tristan Greene 10 minutes ago 0</p>
-        </figcaption>
+        <div class="container1 container">
+            <div>
+                <h2>
+                    Study: Security flaw could allow hackers to trick lab scientists into making viruses
+                </h2>
+                <p>by Tristan Greene 10 minutes ago 0</p>
+            </div>
         </div>
-        <div class="image-container image2">
-            <img src="./assert/images/header_image2.png" alt="image">
-            <figcaption class="image-caption">
-            <h2>
-                AI reveals vast racial inequities in NYC homeownership
-            </h2>
-            <p>by Thomas Macaulay 1 hour ago 4</p>
-            </figcaption>
+        <div class="container2 container">
+            <div>
+                <h2>
+                    AI reveals vast racial inequities in NYC homeownership
+                </h2>
+                <p>by Thomas Macaulay 1 hour ago 4</p>
+            </div>
         </div>
-        <div class="image-container image3">
-            <img src="./assert/images/header_image3.png" alt="image">
-            <figcaption class="image-caption">
-            <h2>
-                Maths has revealed how the COVID-19 vaccine should be distributed
-            </h2>
-            <p>
-                by The Conversation 2 hours ago 4
-            </p>
-        </figcaption>
+            <div class="container3 container">
+                <div>
+                    <h2>
+                        Maths has revealed how the COVID-19 vaccine should be distributed
+                    </h2>
+                    <p> by The Conversation 2 hours ago 4 </p>
+                </div>
+            </div>
         </div>
     </div>
     <!-- Latest New -->
-    <div class="latest-new-container">
+    <section class="latest-news">
+        <h2 style="font-size: 2rem; color: rgb(255, 0, 0); margin-bottom: 25px;">Latest News <i class="fa fa-angle-right" style="font-size: 2rem;"></i></h2>
+        <div class="latest-container">
+            <div class="latest-item">
+                <img src="./assert/images/image1.png" alt="latest image" class="latest-image">
+                <div style="margin-left: 20px;">
+                    <h2 style=" font-size: 2.0rem; margin-bottom: 20px;">
+                        Immortals Fenyx Rising is good clean derivative fun
+                    </h2>
+                    <p style="color: grey; font-size: 1.2rem;">Nino de Vries    12 hours ago</p>
+                </div>
+                
+            </div>
+            <div class="latest-item">
+                <img src="./assert/images/image2.png" alt="latest image" class="latest-image">
+                <div style="margin-left: 20px;">
+                    <h2 style=" font-size: 2.0rem; margin-bottom: 20px;">
+                        Run Windows on your Mac with this Cyber Monday app bundle feat Parallels                    </h2>
+                    <p style="color: grey; font-size: 1.2rem;">TNW Deals 15 hours ago</p>
+                </div>
+                
+            </div>
+            <div class="latest-item">
+                <img src="./assert/images/image3.png" alt="latest image" class="latest-image">
+                <div style="margin-left: 20px;">
+                    <h2 style=" font-size: 2.0rem; margin-bottom: 20px;">
+                        Lucid has the most beautiful car configurator I've ever seen
+                    </h2>
+                    <p style="color: grey; font-size: 1.2rem;">Nino de Vries    12 hours ago</p>
+                </div>
+                
+            </div>
+            <div class="latest-item">
+                <img src="./assert/images/image4.png" alt="latest image" class="latest-image">
+                <div style="margin-left: 20px;">
+                    <h2 style=" font-size: 2.0rem; margin-bottom: 20px;">
+                        Immortals Fenyx Rising is good clean derivative fun
+                    </h2>
+                    <p style="color: grey; font-size: 1.2rem;">Nino de Vries    12 hours ago</p>
+                </div>
+                
+            </div>
+            <div class="latest-item">
+                <img src="./assert/images/image5.png" alt="latest image" class="latest-image">
+                <div style="margin-left: 20px;">
+                    <h2 style=" font-size: 2.0rem; margin-bottom: 20px;">
+                        Immortals Fenyx Rising is good clean derivative fun
+                    </h2>
+                    <p style="color: grey; font-size: 1.2rem;">Nino de Vries    12 hours ago</p>
+                </div>
+                
+            </div>
+            <div class="latest-item">
+                <img src="./assert/images/image6.png" alt="latest image" class="latest-image">
+                <div style="margin-left: 20px;">
+                    <h2 style=" font-size: 2.0rem; margin-bottom: 20px;">
+                        Immortals Fenyx Rising is good clean derivative fun
+                    </h2>
+                    <p style="color: grey; font-size: 1.2rem;">Nino de Vries    12 hours ago</p>
+                </div>
+                
+            </div>
+            <div class="latest-item">
+                <img src="./assert/images/image7.png" alt="latest image" class="latest-image">
+                <div style="margin-left: 20px;">
+                    <h2 style=" font-size: 2.0rem; margin-bottom: 20px;">
+                        Immortals Fenyx Rising is good clean derivative fun
+                    </h2>
+                    <p style="color: grey; font-size: 1.2rem;">Nino de Vries    12 hours ago</p>
+                </div>
+                
+            </div>
+            <div class="latest-item">
+                <img src="./assert/images/image8.png" alt="latest image" class="latest-image">
+                <div style="margin-left: 20px;">
+                    <h2 style=" font-size: 2.0rem; margin-bottom: 20px;">
+                        Immortals Fenyx Rising is good clean derivative fun
+                    </h2>
+                    <p style="color: grey; font-size: 1.2rem;">Nino de Vries    12 hours ago</p>
+                </div>
+                
+            </div>
+        </div>
         <div class="LN-container latest-sub-container">
             <img src="./assert/images/image1.png" alt="image">
             <h2>
@@ -113,7 +197,7 @@
             <p>Matthew Beedham 19 hours ago
             </p>
         </div>
-    </div>
+    </section>
     <!-- Index.CO -->
     <div class="index-co-container">
         <a href="#"></a>
@@ -403,6 +487,7 @@
         </div>
         <div></div>
     </footer>
+</main>
 </body>
 
 </html>

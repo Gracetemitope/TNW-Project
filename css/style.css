@@ -5,39 +5,142 @@
   font-family: 'Nanum Gothic', serif;
 }
 
-/* navigation bar */
-
-.navigation-bar {
-  /* display: flex;   */
-  position: fixed;
-  width: 100%;
-  top: 0px;
-  left: 0;
-  right: 0;
-  background-color: #eee;
-}
-
-.navigation-bar>* {
-}
-
-.left-container > img{
-  width: 90px;
-  height: 60px;
-}
-
-.right-container {
-  float: right;
-}
-
-.right-container>* {
-}
-
 /* header */
 
-.header-images-container {}
+header {
+  width: 100%;
+  display: flex;
+  background-color: #ffffff;
+  position: fixed;
+  height: 50px;
+  top: 0;
+  z-index: 9999;
+}
 
-.image-container>img {
+.toggle {
+  margin-top: 15px;
+  margin-right: 20px;
+}
+
+.toggle a {
+  margin-left: 20px;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.logo-container {
+  flex: 1;
+}
+
+.border-left {
+  height: inherit;
+  border: 1px solid grey;
+}
+
+#logo {
+  width: 80px;
+  height: 50px;
+}
+
+.fa-bars {
+  color: orange;
+}
+
+main {
+  width: 100%;
+}
+
+.header-images-container {
+  position: relative;
+  top: 0;
+  width: 100%;
+  height: 1000px;
+  display: flex;
+  flex-direction: column;
+  /* border: 2px solid black; */
+  color: #ffffff;
+  margin-top: 50px;
+}
+.header-images-container > div {
+  /* flex-basis: 100%; */
+  /* height: 700px; */
+}
+.container1 {
+  height: 300px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin: 10px;
+  /* background-color: rgba(0, 0, 0, 0.9); */
+  background-image: url('../assert/images/header_image1.png');
+}
+.container > div {
+  margin-top: 20%;
+  padding: 20px;
+}
+.container h2  {
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+.container p {
+  color: lightgrey;
+  font-weight: bolder;
+  font-size: 1.2rem;
+}
+.container2 {
+  background-image: url("../assert/images/header_image2.png");
+  height: 300px;
+  /* border: 2px solid red; */
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 10px;
+}
+.container3 {
+  background-image: url("../assert/images/header_image3.png");
+  height: 300px;
+  /* border: 2px solid red; */
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 10px;
+}
+
+.latest-container {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+
+}
+.latest-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+
+}
+.latest-image {
+  width: 125px;
+  height: 125px;
+}
+/* .overlay {
+  background-color: black;
+  width: inherit;
+  height: inherit;
+  opacity: 0.7;
+} */
+/* .image-container>img {
+} */
+
+img {
+  width: 100%;
 }
 
 .image-caption {
 }
+
+/* .image1 {
+  background-image: url("../assert/images/header_image1.png");
+  background-size: cover;
+  width: 100%;
+  border: 2px solid black;
+} */
