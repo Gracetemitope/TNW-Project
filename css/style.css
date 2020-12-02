@@ -154,7 +154,7 @@ img {
 
 /* index.co section */
 
-.index-co-container{
+/* .index-co-container{
   display: flex;
   flex-direction: column;
   width: 90%;
@@ -186,4 +186,51 @@ img {
   font-size: 1rem;
 }
 .latest-funding-test{
+} */
+/* 
+.index-header {
+  display: flex;
+  flex-direction: column;
+}
+.index-main {
+  flex-grow: 2;
+}
+.index-link {
+  flex-shrink: 2;
+} */
+.index-sub-container {
+  display: flex;
+  flex-direction: column
+
+}
+.sub-item-contain {
+  height: 250px;
+  margin-bottom: 10px;
+  /* border: 1px solid black; */
+}
+/* .sub-item-contain > div {
+  margin-bottom: 10px;
+} */
+.sub-item-contain > div:nth-child(1) {
+  width: 100%;
+  height: 50px;
+  z-index: -1;
+  background-color: rgb(245, 9, 80);
+}
+.sub-item-contain > div:nth-child(2) {
+  width: 100%;
+  height: 90px;
+  background-color: pink;
+}
+
+.sub-item-contain > div:nth-child(3) {
+  width: 100%;
+  height: 100px;
+  background-color: rgb(243, 235, 236);
+}
+.upper-block {
+  width: 70px;
+  height: 70px;
+  margin: 20px;
+  position: absolute;
 }
