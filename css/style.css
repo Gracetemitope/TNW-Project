@@ -217,195 +217,223 @@ img {
   background-size: cover;
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../assert/images/image1.png');
 }
-  .card2 {
-    height: 500px;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    background:linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('../assert/images/image2.png');
-  }
-  .card3 {
-    height: 500px;
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: 100% 100%;
-    background:linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('../assert/images/image10.png');
-  }
-  .card4 {
-    height: 500px;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    background:linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('../assert/images/image4.png');
-  }
-  
-  .card5 {
-    height: 500px;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    background:linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('../assert/images/image5.png');
-  }
-  .card6 {
-    height: 500px;
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: 100% 100%;
-    background:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('../assert/images/image10.png');
-  }
 
-  .card7 {
-    height: 500px;
-    background-repeat: no-repeat;
-    background-position: top center;
-    background-size: cover;
-    background:linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('../assert/images/image11.png');
-  }
-  .card8 {
-    height: 500px;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    background:linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('../assert/images/image8.png');
-  }
-  .card9 {
-    height: 500px;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    background:linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('../assert/images/image9.png');
-  }
-  .card-image > div {
-    margin-top: 20%;
-    padding: 20px;
-  }
-  .card-image > h2  {
-    cursor: pointer;
-    font-size: 2rem;
-    margin-bottom: 15px;
-  }
-  .card-image > p {
-    color: grey;
-    font-weight: bolder;
-    font-size: 1.2rem;
-  }
-  .card-container{
-    margin: 10px;
-  }
-  .card{
-    display: flex;
-    flex-direction: column;
-    width: 95%;
-    align-content: center;
-    margin: 10px auto;
-  }
-  .sub-card-image{
-    width: 210px;
-    height: 110px;
-    overflow: hidden;
-  }
-  .sub-card-container{
-    cursor: pointer;
-    display: flex;
-    width: 100%;
-    margin: 0 auto;
-    background-color:rgba(255,68,34,.08);
-  }
-  .sub-header-card{
-    font-size: 10px;
-    color: #f42;
-  }
-  .card-image>div>h2{
-    position: relative;
-    z-index: 100;
-    left: 10px;
-    top: 215px;
-    font-size: 25px;
-    font-weight: 700;
-    color: white;
-  }
-  .card-image>div>p{
-    position: relative;
-    z-index: 100;
-    left: 10px;
-    top: 205px;
-  }
-  .sub-header-card>h2{
-    font-weight: 900;
-    font-size: 25px;
-    padding: 10px;
-  }
-  .card-point{
-    line-height: 3rem;
-    font-size: small;
-    list-style: circle;
-  }
-  .card-point>ul>hr{
-    width: 100%;
-    color: lightgray;
-  }
+.card2 {
+  height: 500px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background:linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('../assert/images/image2.png');
+}
 
-  /* footer */
-  footer{
-    height: 40vh;
-    display:flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-  .upper_container{
-    height: 25vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    background-color: #131313;
-  }
-  .lower_container{
-    height: 15vh;
-    text-align: center;
-    background-color: black;
-    color: white;
-  }
-  .social_icon{
-    display: flex;
-    justify-content: space-between;
-    align-self: center;
-    font-size: large;
-    color: white;
-  }
-  .social_icon>div{
-    width: 50px;
-    height: 50px;
-    background-color: gray;
-    border-radius: 50%;
-    margin-left: 15px;
-  }
-  .social_icon>div>a>i{
-    margin: 15px;
-    color: white;
-  }
+.card3 {
+  height: 500px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 100% 100%;
+  background:linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('../assert/images/image10.png');
+}
+
+.card4 {
+  height: 500px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background:linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('../assert/images/image4.png');
+}
   
-  .footer_links{
-    text-align: center;
-    margin: 10px;
-  }
-  .footer_links>a{
-    text-decoration: none;
-    color: lightgray;
-    margin: 10px;
-  }
-  .lower_container>div{
-    width: 50%;
-    margin: 15px auto;
-  }
-  .index-link{
-    display: flex;
-    flex-direction: column;
-  }
-  .index-link>a{
-    margin: 10px;
-    text-decoration: none;
-    color:#f42
-  }
+.card5 {
+  height: 500px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background:linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('../assert/images/image5.png');
+}
+
+.card6 {
+  height: 500px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 100% 100%;
+  background:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('../assert/images/image10.png');
+}
+
+.card7 {
+  height: 500px;
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+  background:linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('../assert/images/image11.png');
+}
+
+.card8 {
+  height: 500px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background:linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('../assert/images/image8.png');
+}
+
+.card9 {
+  height: 500px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background:linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('../assert/images/image9.png');
+}
+
+.card-image > div {
+  margin-top: 20%;
+  padding: 20px;
+}
+
+.card-image > h2  {
+  cursor: pointer;
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+.card-image > p {
+  color: grey;
+  font-weight: bolder;
+  font-size: 1.2rem;
+}
+
+.card-container{
+  margin: 10px;
+}
+
+.card{
+  display: flex;
+  flex-direction: column;
+  width: 95%;
+  align-content: center;
+  margin: 10px auto;
+}
+
+.sub-card-image{
+  width: 210px;
+  height: 110px;
+  overflow: hidden;
+}
+
+.sub-card-container{
+  cursor: pointer;
+  display: flex;
+  width: 100%;
+  margin: 0 auto;
+  background-color:rgba(255,68,34,.08);
+}
+
+.sub-header-card{
+  font-size: 10px;
+  color: #f42;
+}
+
+.card-image > div > h2{
+  position: relative;
+  z-index: 100;
+  left: 10px;
+  top: 215px;
+  font-size: 25px;
+  font-weight: 700;
+  color: white;
+}
+
+.card-image > div > p{
+  position: relative;
+  z-index: 100;
+  left: 10px;
+  top: 205px;
+}
+
+.sub-header-card > h2{
+  font-weight: 900;
+  font-size: 25px;
+  padding: 10px;
+}
+
+.card-point{
+  line-height: 3rem;
+  font-size: small;
+  list-style: circle;
+}
+
+.card-point > ul > hr{
+  width: 100%;
+  color: lightgray;
+}
+
+/* footer */
+footer{
+  height: 40vh;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.upper_container{
+  height: 25vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #131313;
+}
+
+.lower_container{
+  height: 15vh;
+  text-align: center;
+  background-color: black;
+  color: white;
+}
+
+.social_icon{
+  display: flex;
+  justify-content: space-between;
+  align-self: center;
+  font-size: large;
+  color: white;
+}
+
+.social_icon > div{
+  width: 50px;
+  height: 50px;
+  background-color: gray;
+  border-radius: 50%;
+  margin-left: 15px;
+}
+
+.social_icon > div > a > i{
+  margin: 15px;
+  color: white;
+}
+  
+.footer_links{
+  text-align: center;
+  margin: 10px;
+}
+
+.footer_links>a{
+  text-decoration: none;
+  color: lightgray;
+  margin: 10px;
+}
+
+.lower_container>div{
+  width: 50%;
+  margin: 15px auto;
+}
+
+.index-link{
+  display: flex;
+  flex-direction: column;
+}
+
+.index-link>a{
+  margin: 10px;
+  text-decoration: none;
+  color:#f42
+}
 
 @media (min-width:770px){
   .header-images-container {
