@@ -241,6 +241,7 @@
     width: 100%;
     color:  rgba(255, 0, 0,.9); ;
   }
+  /* card contianer */
   .card-image{
     height: 500px;
     background-repeat: no-repeat;
@@ -307,7 +308,6 @@
     padding: 10px;
   }
   .card-point{
-    padding-left:20px;
     line-height: 3rem;
     font-size: small;
     list-style: circle;
@@ -316,6 +316,13 @@
     width: 100%;
     color: lightgray;
   }
+  li::before {
+    content: "•"; 
+    color: red;
+    margin-right: 3px;
+  }
+
+  /* footer */
   footer{
     height: 40vh;
     display:flex;
@@ -524,23 +531,70 @@
     .card-container{
       display: flex;
       flex-wrap: wrap;
-      border: 10px solid red;
+      /* border: 10px solid red; */
       max-width: 90%;
       margin: 0 auto;
     }
     .card{
       max-width: calc(90%/3);
       margin: 10px;
-      border: 1px solid black;
+      /* border: 1px solid black; */
       max-height: 100vh;
     }
-    .card-image>div>*{
+    .card-image>div>h2{
+      position: relative;
+      z-index: 100;
+      font-size: 18px;
+      font-weight: 700;
+      color: white;
+      top: 18px;
+      left: 0;
+    }
+    .card-image>div>p{
+      position: relative;
+      z-index: 100;
+      left: 0px;
+      top: 15px;
       color: black;
-      position: absolute;
-      top: 100px;
+    }
+    .index-main>h2{
+      padding-left: 0;
+    }
+    .sub-card-container{
+      width: 100%;
+      margin: 0 auto;
+      background-color:rgba(255,68,34,.08);
+    }
+    .sub-header-card>h2{
+      font-size: 15px;
+      color: #f42;
+    }
+    .sub-card-image{
+      padding: 2px;
+      padding-bottom: 0;
+      height: auto;
+    }
+    .card-point>ul{
+      margin-top: 20px;
+      margin-bottom: 30px;
+      line-height: 1.2rem;
+      font-size: small;
+      list-style: none;
+      list-style: #f42;
+    }
+    .card-point>ul>li{
+      border: 1px solid red;
+    }
+    .card-point>ul>li>p{
+      text-align: justify;
+      margin-left: 10px; 
+    }
+    .card-point>ul>hr{
+      width: 100%;
+      color: lightgray;
+      height: 0.2px;
     }
 }
-
 @media (max-width: 770px) {
   .container h2  {
     font-size: 2rem;
