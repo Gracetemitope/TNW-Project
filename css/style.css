@@ -77,7 +77,9 @@
     background-position: center;
     background-size: cover;
     margin: 10px;
-    background-image: url('../assert/images/header_image1.png');
+    background:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.7)), url('../assert/images/header_image1.png');
+
+    /* background-image: url('../assert/images/header_image1.png'); */
   }
   .container > div {
     /* position: relative; */
@@ -94,19 +96,17 @@
     font-size: 1.2rem;
   }
   .container2 {
-    background-image: url("../assert/images/header_image2.png");
+    background:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.7)), url('../assert/images/header_image2.png');
     height: 300px;
     background-repeat: no-repeat;
     background-position: center;
-    background: linear-gradient(left, rgba(0,0,0,0.65) 0%, rgba(255,255,255,0) 48%, rgba(2,2,2,1) 100%);
     margin: 10px;
   }
   .container3 {
-    background-image: url("../assert/images/header_image3.png");
+    background:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.7)), url('../assert/images/header_image3.png');
     height: 300px;
     background-repeat: no-repeat;
     background-position: center;
-    background: linear-gradient(left, rgba(0,0,0,0.65) 0%, rgba(255,255,255,0) 48%, rgba(2,2,2,1) 100%);
 
     /* background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)); */
     /* background-color: black; */
@@ -247,7 +247,73 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    background-image:url(../assert/images/image1.png), linear-gradient(0deg, black, white);
+    /* background:linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('../assert/images/image1.png'); */
+
+  }
+  .card1 {
+    height: 500px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background:linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('../assert/images/image1.png');
+  }
+  .card2 {
+    height: 500px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background:linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('../assert/images/image2.png');
+  }
+  .card3 {
+    height: 500px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100% 100%;
+    background:linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('../assert/images/image10.png');
+  }
+  .card4 {
+    height: 500px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background:linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('../assert/images/image4.png');
+  }
+  
+  .card5 {
+    height: 500px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background:linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('../assert/images/image5.png');
+  }
+  .card6 {
+    height: 500px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100% 100%;
+    background:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('../assert/images/image10.png');
+  }
+
+  .card7 {
+    height: 500px;
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    background:linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('../assert/images/image11.png');
+  }
+  .card8 {
+    height: 500px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background:linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('../assert/images/image8.png');
+  }
+  .card9 {
+    height: 500px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background:linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('../assert/images/image9.png');
   }
   .card-image > div {
     margin-top: 20%;
@@ -320,6 +386,16 @@
     content: "•"; 
     color: red;
     margin-right: 3px;
+  }
+  li {
+    /* text-align: flex-start; */
+  }
+  li >div::before {
+    height: 10px;
+    content: "•"; 
+    color: red;
+    margin-right: 3px;
+    border: 1px solid black;
   }
 
   /* footer */
@@ -533,7 +609,7 @@
       flex-wrap: wrap;
       /* border: 10px solid red; */
       max-width: 90%;
-      margin: 0 auto;
+      margin: 40px auto;
     }
     .card{
       max-width: calc(90%/3);
