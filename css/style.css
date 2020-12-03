@@ -204,14 +204,14 @@ img {
   margin-bottom: 20px;
 }
 
-.middle-block > div > p:nth-child(2) {
-  font-size: 0.8rem;
-  color: grey;
-}
-
 .lower_container > div > p {
   font-weight: lighter;
   font-size: 13px;
+}
+
+.middle-block > div > p:nth-child(2) {
+  font-size: 0.8rem;
+  color: grey;
 }
 
 .middle-block > div > p:nth-child(1) {
