@@ -640,6 +640,7 @@ footer {
     top: 18px;
     left: 0;
     margin-bottom: 10px;
+    line-height: 2rem;
   }
 
   .card-image > div {
