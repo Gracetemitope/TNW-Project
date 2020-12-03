@@ -178,11 +178,6 @@ img {
   color: grey;
 }
 
-.middle-block > div > p:nth-child(1) {
-  font-size: 1rem;
-  font-weight: 900;
-}
-
 .lower-block > p {
   font-family: 'Montserrat', sans-serif;
   color: black;
@@ -196,6 +191,11 @@ img {
 
 .lower-block > p:nth-child(2) {
   margin-bottom: 20px;
+}
+
+.middle-block > div > p:nth-child(1) {
+  font-size: 1rem;
+  font-weight: 900;
 }
 
 .lower-block > hr {
@@ -232,15 +232,15 @@ img {
   background-color: #f42;
 }
 
+.lower_container > div {
+  width: 50%;
+  margin: 15px auto;
+}
+
 .sub-item-contain > div:nth-child(2) {
   width: 100%;
   height: 90px;
   background-color: rgba(255, 68, 34, 0.08);
-}
-
-.lower_container > div {
-  width: 50%;
-  margin: 15px auto;
 }
 
 .discription {
@@ -503,6 +503,15 @@ footer {
     margin-bottom: 20px;
   }
 
+  .latest-news > h2 {
+    padding-left: 10px;
+    position: relative;
+    font-weight: 900;
+    font-size: 2rem;
+    color: rgb(255, 0, 0);
+    margin-bottom: 25px;
+  }
+
   .container > div h2 {
     font-size: 1.2rem;
     margin-bottom: 10px;
@@ -542,15 +551,6 @@ footer {
   .latest-image {
     width: 100%;
     height: 50%;
-  }
-
-  .latest-news > h2 {
-    padding-left: 10px;
-    position: relative;
-    font-weight: 900;
-    font-size: 2rem;
-    color: rgb(255, 0, 0);
-    margin-bottom: 25px;
   }
 
   .latest-h2 {
@@ -670,6 +670,14 @@ footer {
     height: 0.2px;
   }
 
+  .navigation-link > a {
+    padding-left: 20px;
+    color: gray;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 700;
+  }
+
   /* hover effect */
   .navigation-link > a:hover {
     font-weight: 700;
@@ -687,15 +695,6 @@ footer {
     line-height: 1;
     padding: 18px 10px 0;
   }
-
-  .navigation-link > a {
-    padding-left: 20px;
-    color: gray;
-    text-decoration: none;
-    font-size: 15px;
-    font-weight: 700;
-  }
-
 }
 
 @media (max-width: 770px) {
