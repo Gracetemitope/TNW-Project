@@ -22,6 +22,11 @@ header {
   justify-content: space-between;
 }
 
+.header-images-container > div,
+.container-display > div {
+  position: relative;
+}
+
 .toggle {
   align-self: center;
   font-size: x-large;
@@ -44,7 +49,8 @@ header {
 .footer_links > a {
   text-decoration: none;
   color: lightgray;
-  margin: 10px;
+  margin: 12px;
+  font-size: 12px;
 }
 
 .toggle > a:nth-child(2) {
@@ -57,17 +63,19 @@ header {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  margin: 10px;
 }
 
 .container > div {
-  padding: 20px;
+  padding: 10px 5px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
 }
 
 .container h2 {
   color: white;
   font-weight: bolder;
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 
 .container p {
@@ -81,7 +89,8 @@ header {
   height: 300px;
   background-repeat: no-repeat;
   background-position: center;
-  margin: 10px;
+  margin-left: 10px;
+  margin-bottom: 20px;
 }
 
 .container3 {
@@ -89,7 +98,8 @@ header {
   height: 300px;
   background-repeat: no-repeat;
   background-position: center;
-  margin: 10px;
+  margin-left: 10px;
+  margin-top: 10px;
 }
 
 .latest-container {
@@ -140,12 +150,6 @@ img {
   margin-bottom: 10px;
 }
 
-.card-image > p {
-  color: grey;
-  font-weight: bolder;
-  font-size: 1.2rem;
-}
-
 .upper-block p {
   margin-left: 100px;
   color: white;
@@ -163,11 +167,13 @@ img {
   font-size: small;
 }
 
-.card-image > div > p {
+.card-image {
   position: relative;
-  z-index: 100;
-  left: 10px;
-  top: 205px;
+  height: 270px;
+}
+
+.card-image > div > p {
+  color: grey;
 }
 
 .middle-block > div {
@@ -213,21 +219,31 @@ img {
 }
 
 .card-image > div {
-  margin-top: 20%;
-  padding: 20px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  max-width: 100%;
+  padding: 20px 10px;
+  margin: 0 auto;
 }
 
 .social_icon > div {
   width: 50px;
   height: 50px;
-  background-color: gray;
+  background-color: #202020;
+  border: 2px solid #202020;
   border-radius: 50%;
   margin-left: 15px;
 }
 
 .lower_container > div {
-  width: 50%;
-  margin: 15px auto;
+  width: 60%;
+  margin: 30px auto;
+}
+
+.lower_container > div > p {
+  font-weight: lighter;
+  font-size: 13px;
 }
 
 .sub-item-contain > div:nth-child(1) {
@@ -266,17 +282,11 @@ img {
   position: absolute;
 }
 
-.card-image {
-  height: 500px;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-}
-
-.card-image > h2 {
+.card-image > div > h2 {
   cursor: pointer;
   font-size: 2rem;
-  margin-bottom: 15px;
+  color: white;
+  margin-bottom: 10px;
 }
 
 .card-container {
@@ -316,7 +326,6 @@ img {
 
 .card1 {
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../assert/images/image1.png');
-  height: 500px;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -324,7 +333,6 @@ img {
 
 .card2 {
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../assert/images/image2.png');
-  height: 500px;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -332,7 +340,6 @@ img {
 
 .card3 {
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../assert/images/image10.png');
-  height: 500px;
   background-repeat: no-repeat;
   background-position: center center;
   background-size: 100% 100%;
@@ -340,7 +347,6 @@ img {
 
 .card4 {
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../assert/images/image4.png');
-  height: 500px;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -348,7 +354,6 @@ img {
 
 .card5 {
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../assert/images/image5.png');
-  height: 500px;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -356,15 +361,13 @@ img {
 
 .card6 {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../assert/images/image10.png');
-  height: 500px;
   background-repeat: no-repeat;
   background-position: center center;
-  background-size: 100% 100%;
+  background-size: cover;
 }
 
 .card7 {
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../assert/images/image11.png');
-  height: 500px;
   background-repeat: no-repeat;
   background-position: top center;
   background-size: cover;
@@ -372,7 +375,6 @@ img {
 
 .card8 {
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../assert/images/image8.png');
-  height: 500px;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -380,7 +382,6 @@ img {
 
 .card9 {
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../assert/images/image9.png');
-  height: 500px;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -409,21 +410,21 @@ img {
 .card-point > ul > hr {
   width: 100%;
   color: lightgray;
+  height: 0.2px;
+}
+
+.card-point > ul {
+  margin-top: 20px;
+  margin-bottom: 30px;
+  font-size: small;
+  width: 97%;
+  float: right;
 }
 
 .sub-header-card {
-  font-size: 10px;
+  font-size: 15px;
   color: #f42;
-}
-
-.card-image > div > h2 {
-  position: relative;
-  z-index: 100;
-  left: 10px;
-  top: 215px;
-  font-size: 25px;
-  font-weight: 700;
-  color: white;
+  padding: 10px 0 10px 10px;
 }
 
 .index-link {
@@ -446,12 +447,15 @@ footer {
 
 .footer_links {
   text-align: center;
-  margin: 10px;
+  margin: 20px;
+  text-transform: uppercase;
+  color: grey;
 }
 
 @media (min-width: 770px) {
   .header-images-container {
-    height: 500px;
+    margin: 60px 0;
+    height: 470px;
     max-width: 100vw;
     display: grid;
     grid-template-columns: 70% 1fr;
@@ -463,17 +467,8 @@ footer {
     height: 425px;
   }
 
-  .container-display {
-    grid-area: 1/2/2/3;
-    display: grid;
-    grid-template-rows: repeat(2, 1fr);
-  }
-
   .sub-header-card > h2 {
-    color: #f42;
-    font-weight: 900;
-    font-size: 25px;
-    padding: 10px;
+    font-size: inherit;
   }
 
   .big-container p {
@@ -499,22 +494,14 @@ footer {
   }
 
   .big-container h2 {
-    font-size: 2rem;
+    font-size: 3.2rem;
     margin-bottom: 20px;
   }
 
-  .latest-news > h2 {
-    padding-left: 10px;
-    position: relative;
-    font-weight: 900;
-    font-size: 2rem;
-    color: rgb(255, 0, 0);
-    margin-bottom: 25px;
-  }
-
   .container > div h2 {
-    font-size: 1.2rem;
+    font-family: 'Nanum Gothic', sans-serif;
     margin-bottom: 10px;
+    font-weight: bolder;
   }
 
   .container2 {
@@ -525,6 +512,7 @@ footer {
   .container3 {
     grid-area: 2/2/3/3;
     height: calc(405px / 2);
+    width: auto;
   }
 
   .container > div {
@@ -570,6 +558,15 @@ footer {
     margin: 0 auto;
   }
 
+  .latest-news > h2 {
+    padding-left: 10px;
+    position: relative;
+    font-weight: 900;
+    font-size: 2rem;
+    color: rgb(255, 0, 0);
+    margin-bottom: 25px;
+  }
+
   /* index.Co latest funding */
   .index-co-container {
     flex-direction: row;
@@ -611,31 +608,19 @@ footer {
 
   .card-image > div > h2 {
     cursor: pointer;
-    position: relative;
-    display: inline;
-    z-index: 100;
-    font-size: 20px;
-    font-weight: 700;
-    color: white;
-    top: 18px;
-    left: 0;
-    margin-bottom: 10px;
-    line-height: 2rem;
+    font-size: 18px;
+    font-weight: 900;
+    line-height: 1.4rem;
+    font-family: 'ARS Maquette', 'Helvetica Neue', Arial, sans-serif;
   }
 
   .card-image > div {
-    position: relative;
-    top: 100px;
-    left: 6px;
-    display: inline-block;
+    display: block;
+    padding: 10px 5px;
   }
 
   .card-image > div > p {
-    position: relative;
-    z-index: 100;
-    left: 0;
-    top: 25px;
-    color: grey;
+    font-weight: 900;
   }
 
   .sub-card-container {
@@ -659,9 +644,19 @@ footer {
     float: right;
   }
 
-  .card-point > ul > li > p {
+  .card-point > ul > li {
     text-align: justify;
-    margin-left: 10px;
+    border-bottom: 0.5px solid grey;
+    padding-bottom: 10px;
+    list-style: none;
+  }
+
+  .card-point > ul > li::before {
+    content: ".";
+    font-size: 40px;
+    margin-left: -16px;
+    vertical-align: 10%;
+    color: #f42;
   }
 
   .card-point > ul > hr {
@@ -704,8 +699,30 @@ footer {
     margin-bottom: 15px;
   }
 
+  .container1 {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url('../assert/images/header_image1.png');
+    height: 300px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin: 10px;
+    margin-top: 60px;
+  }
+
   .latest-item > div {
     margin-left: 20px;
+  }
+
+  .latest-news {
+    padding: 20px;
+  }
+
+  .latest-news > h2 {
+    position: relative;
+    font-weight: 900;
+    font-size: 2rem;
+    color: rgb(255, 0, 0);
+    margin-bottom: 25px;
   }
 
   .hidden-mobile {
@@ -715,7 +732,8 @@ footer {
 
 .container1:hover,
 .container2:hover,
-.container3:hover {
+.container3:hover,
+.card-image:hover {
   opacity: 0.9;
 }
 
@@ -733,4 +751,12 @@ footer {
 .sub-header-card > h2:hover,
 .card-image > div > h2:hover {
   text-decoration: underline;
+}
+
+.footer_links > a:hover {
+  color: white;
+}
+
+.social_icon > div:hover {
+  background-color: black;
 }
