@@ -19,14 +19,28 @@
 </head>
 
 <body>
+    <div class="primary-navigation-container d-flex hidden-mobile">
+        <div>
+            <a href="#">News</a>
+            <a href="#">Events ▾</a>
+            <a href="#">Business ▾</a>
+            <a href="#">AMAs</a>
+            <a href="#">Spaces</a>
+            <a href="#">Terms & Condition</a>
+        </div>
+        <div>
+            <a href="#">About</a>
+            <a href="#">Advertise</a>
+            <a href="#">Jobs</a>
+            <a href="#">Contact</a>
+        </div>
+    </div>
     <!-- Navigation Bar -->
-    <header>
-        <div class="logo-container">
-                <a href="#"
-                    class="hidden-desktop">
+    <header class="d-flex">
+        <div class="logo-container d-flex">
+                <a href="#">
                     <img src="./assert/images/logo.jpeg"
-                        alt="logo-image"
-                        id="logo">
+                        alt="logo-image" class="hidden-mobile">
                 </a>
                 <div class="navigation-link hidden-mobile">
 
@@ -41,8 +55,7 @@
         </div>
         <div class="border-left"></div>
         <div class="toggle">
-            <a href="#"><i class="fa fa-search"
-                    style="color: grey;"></i></a>
+            <a href="#"><i class="fa fa-search icon-flipped"></i></a>
             <a href="#" class="hidden-desktop"><i class="fa fa-bars"></i></a>
         </div>
     </header>
@@ -51,6 +64,7 @@
         <div class="header-images-container">
             <div class="container1 big-container container">
                 <div>
+                    <img src="https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/tnw.svg" alt="logo" class="logo-image hidden-mobile hidden-middle">
                     <h2>
                         Study: Security flaw could allow hackers to trick lab scientists into making viruses
                     </h2>

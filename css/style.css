@@ -10,11 +10,13 @@
   font-family: 'Nanum Gothic', serif;
 }
 
+.d-flex {
+  display: flex;
+}
+
 header {
   width: 100%;
-  display: flex;
   background-color: #fff;
-  position: fixed;
   height: 50px;
   top: 0;
   z-index: 9999;
@@ -38,6 +40,14 @@ header {
   height: 100%;
   padding-left: 10px;
   margin-right: 10px;
+}
+
+.icon-flipped {
+  transform: scaleX(-1);
+  -moz-transform: scaleX(-1);
+  -webkit-transform: scaleX(-1);
+  -ms-transform: scaleX(-1);
+  color: grey;
 }
 
 .index-link > a {
@@ -452,7 +462,33 @@ footer {
   color: grey;
 }
 
-@media (min-width: 770px) {
+@media (min-width: 768px) {
+  .primary-navigation-container {
+    padding: 10px 5px;
+    background-color: black;
+    justify-content: space-between;
+  }
+
+  .primary-navigation-container > div > a {
+    color: grey;
+    text-decoration: none;
+    justify-content: space-between;
+    margin-right: 20px;
+  }
+
+  .logo-image {
+    position: absolute;
+    top: -210px;
+    left: 20px;
+    height: 160px;
+    width: 450px;
+  }
+
+  .logo-container > a > img {
+    height: 51px;
+    top: 0;
+  }
+
   .header-images-container {
     margin: 60px 0;
     height: 470px;
@@ -679,7 +715,7 @@ footer {
     color: black;
   }
 
-  .hidden-desktop {
+  .hidden-mobile {
     display: none;
   }
 
@@ -692,11 +728,15 @@ footer {
   }
 }
 
-@media (max-width: 770px) {
+@media (max-width: 768px) {
   .container h2 {
     font-size: 2rem;
     margin-top: 9rem;
     margin-bottom: 15px;
+  }
+
+  .hidden-desktop {
+    display: none;
   }
 
   .container1 {
@@ -725,9 +765,24 @@ footer {
     margin-bottom: 25px;
   }
 
-  .hidden-mobile {
+  .hidden-middle {
     display: none;
   }
+}
+
+@media (max-width: 1024px) {
+  .primary-navigation-container {
+    justify-content: flex-end;
+  }
+
+  .navigation-link {
+    justify-content: flex-end;
+  }
+
+  .hidden-desktop {
+    display: none;
+  }
+
 }
 
 .container1:hover,
@@ -753,7 +808,8 @@ footer {
   text-decoration: underline;
 }
 
-.footer_links > a:hover {
+.footer_links > a:hover,
+.primary-navigation-container > div > a:hover {
   color: white;
 }
 
