@@ -5,118 +5,114 @@
   font-family: 'Nanum Gothic', serif;
 }
 
-  header {
-    width: 100%;
-    display: flex;
-    background-color: #ffffff;
-    position: fixed;
-    height: 50px;
-    top: 0;
-    z-index: 9999;
-    box-shadow:3px 3px 5px 1px #ccc;
-  }
-  
-  .toggle {
-    margin-top: 15px;
-    margin-right: 20px;
-  }
-  
-  .toggle a {
-    margin-left: 20px;
-    font-size: 1.5rem;
-    cursor: pointer;
-  }
-  
-  .logo-container {
-    flex: 1;
-  }
-  
-  .border-left {
-    height: inherit;
-    border: 1px solid grey;
-  }
-  
-  #logo {
-    width: 80px;
-    height: 50px;
-  }
-  
-  .fa-bars {
-    color: orange;
-  }
-  
-  main {
-    width: 100%;
-  }
-  
-  .header-images-container {
-    position: relative;
-    top: 0;
-    width: 100%;
-    height: 1000px;
-    display: flex;
-    flex-direction: column;
-    color: #ffffff;
-    margin-top: 50px;
-  }
-  .big-container > div {
-    margin-top: 25%;
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-  .big-container h2 {
-    margin-bottom: 10px;
-  }
-  .big-container p {
-    color: grey;
+header {
+  width: 100%;
+  display: flex;
+  background-color: #ffffff;
+  position: fixed;
+  height: 50px;
+  top: 0;
+  z-index: 9999;
+  box-shadow: 3px 3px 5px 1px #ccc;
+}
 
-  }
-  .container1 {
-    height: 300px;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    margin: 10px;
-    background:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.7)), url('../assert/images/header_image1.png');
+.toggle {
+  margin-top: 15px;
+  margin-right: 20px;
+}
 
-    /* background-image: url('../assert/images/header_image1.png'); */
-  }
-  .container > div {
-    /* position: relative; */
-    padding: 20px;
-  }
-  /* .container h2  {
-    font-size: 2rem;
-    /* margin-top: 9rem; */
-    /* margin-bottom: 15px; */
-  } */
-  .container p {
-    color: lightgrey;
-    font-weight: bolder;
-    font-size: 1.2rem;
-  }
-  .container2 {
-    background:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.7)), url('../assert/images/header_image2.png');
-    height: 300px;
-    background-repeat: no-repeat;
-    background-position: center;
-    margin: 10px;
-  }
-  .container3 {
-    background:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.7)), url('../assert/images/header_image3.png');
-    height: 300px;
-    background-repeat: no-repeat;
-    background-position: center;
+.toggle a {
+  margin-left: 20px;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
 
-    /* background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)); */
-    /* background-color: black; */
-    margin: 10px;
-  }
-  .container {
-    /* background-image: linear-gradient(rgb(245, 228, 228), grey); */
+.logo-container {
+  flex: 1;
+}
 
-  }
-  .latest-container {
+.border-left {
+  height: inherit;
+  border: 1px solid grey;
+}
+
+#logo {
+  width: 80px;
+  height: 50px;
+}
+
+.fa-bars {
+  color: orange;
+}
+
+main {
+  width: 100%;
+}
+
+.header-images-container {
+  position: relative;
+  top: 0;
+  width: 100%;
+  height: 1000px;
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+  margin-top: 50px;
+}
+
+.big-container > div {
+  margin-top: 25%;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.big-container h2 {
+  margin-bottom: 10px;
+}
+
+.big-container p {
+  color: grey;
+}
+
+.container1 {
+  height: 300px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin: 10px;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url('../assert/images/header_image1.png');
+}
+
+.container > div {
+  padding: 20px;
+}
+
+.container p {
+  color: lightgrey;
+  font-weight: bolder;
+  font-size: 1.2rem;
+}
+
+.container2 {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url('../assert/images/header_image2.png');
+  height: 300px;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 10px;
+}
+
+.container3 {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url('../assert/images/header_image3.png');
+  height: 300px;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 10px;
+}
+
+.container {
+}
+  
+.latest-container {
     display: flex;
     flex-direction: column;
     /* margin-left: 20px; */
