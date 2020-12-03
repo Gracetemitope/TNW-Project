@@ -156,6 +156,13 @@ img {
   font-family: 'Noto Sans JP', sans-serif;
 }
 
+.lower-block > p {
+  font-family: 'Montserrat', sans-serif;
+  color: black;
+  padding-left: 20px;
+  font-size: small;
+}
+
 .card-image > div > p {
   position: relative;
   z-index: 100;
@@ -166,13 +173,6 @@ img {
 .middle-block > div {
   margin-left: 100px;
   padding-top: 20px;
-}
-
-.lower-block > p {
-  font-family: 'Montserrat', sans-serif;
-  color: black;
-  padding-left: 20px;
-  font-size: small;
 }
 
 .middle-block > div > p {
