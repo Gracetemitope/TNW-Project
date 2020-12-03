@@ -196,13 +196,13 @@ img {
   padding: 3px;
 }
 
-.lower-block > p:nth-child(1) {
-  margin-bottom: 5px;
-}
-
 .lower_container > div > p {
   font-weight: lighter;
   font-size: 13px;
+}
+
+.lower-block > p:nth-child(1) {
+  margin-bottom: 5px;
 }
 
 .lower-block > p:nth-child(2) {
