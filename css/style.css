@@ -209,6 +209,11 @@ img {
   color: grey;
 }
 
+.lower_container > div > p {
+  font-weight: lighter;
+  font-size: 13px;
+}
+
 .middle-block > div > p:nth-child(1) {
   font-size: 1rem;
   font-weight: 900;
@@ -249,11 +254,6 @@ img {
 .lower_container > div {
   width: 60%;
   margin: 30px auto;
-}
-
-.lower_container > div > p {
-  font-weight: lighter;
-  font-size: 13px;
 }
 
 .sub-item-contain > div:nth-child(1) {
@@ -474,6 +474,14 @@ footer {
     justify-content: space-between;
   }
 
+  .navigation-link > a {
+    padding-left: 20px;
+    color: gray;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 700;
+  }
+
   .primary-navigation-container > div > a {
     color: grey;
     text-decoration: none;
@@ -539,6 +547,15 @@ footer {
     margin-bottom: 20px;
   }
 
+  .latest-news > h2 {
+    padding-left: 10px;
+    position: relative;
+    font-weight: 900;
+    font-size: 2rem;
+    color: rgb(255, 0, 0);
+    margin-bottom: 25px;
+  }
+
   .container > div h2 {
     font-family: 'Nanum Gothic', sans-serif;
     margin-bottom: 10px;
@@ -597,15 +614,6 @@ footer {
     z-index: 2;
     max-width: 1024px;
     margin: 0 auto;
-  }
-
-  .latest-news > h2 {
-    padding-left: 10px;
-    position: relative;
-    font-weight: 900;
-    font-size: 2rem;
-    color: rgb(255, 0, 0);
-    margin-bottom: 25px;
   }
 
   /* index.Co latest funding */
@@ -704,14 +712,6 @@ footer {
     width: 100%;
     color: lightgray;
     height: 0.2px;
-  }
-
-  .navigation-link > a {
-    padding-left: 20px;
-    color: gray;
-    text-decoration: none;
-    font-size: 15px;
-    font-weight: 700;
   }
 
   /* hover effect */
