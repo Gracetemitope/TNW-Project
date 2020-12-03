@@ -490,8 +490,7 @@ footer {
   }
 
   .logo-container > a > img {
-    height: 51px;
-    top: 0;
+    height: 50px;
   }
 
   .header-images-container {
@@ -562,8 +561,7 @@ footer {
   }
 
   .latest-item {
-    width: 290px;
-    /* max-width: 295px; */
+    width: 240px;
     display: inline-block;
     margin-left: 10px;
   }
@@ -597,7 +595,7 @@ footer {
 
   .latest-news {
     z-index: 2;
-    max-width: 1300px;
+    max-width: 1024px;
     margin: 0 auto;
   }
 
@@ -644,7 +642,7 @@ footer {
   }
 
   .card {
-    max-width: calc(90% / 3);
+    max-width: calc(90% / 2);
     margin: 10px;
     max-height: 100vh;
   }
@@ -740,15 +738,17 @@ footer {
     display: none;
   }
 
+  .logo-container > a > img {
+    height: 100px;
+    position: relative;
+    top: -48px;
+  }
+
   .container h2 {
     font-size: 2rem;
     margin-top: 9rem;
     margin-bottom: 15px;
   }
-
-  /* .hidden-desktop {
-    display: none;
-  } */
 
   .container1 {
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url('../assert/images/header_image1.png');
@@ -775,15 +775,19 @@ footer {
     color: rgb(255, 0, 0);
     margin-bottom: 25px;
   }
+}
 
-  /* .hidden-middle {
-    display: none;
-  } */
+@media (min-width: 1024px) {
+  .card {
+    max-width: calc(90% / 3);
+    margin: 10px;
+    max-height: 100vh;
+  }
 }
 
 @media (max-width: 1024px) {
   .primary-navigation-container {
-    justify-content: flex-end;
+    justify-content: center;
   }
 
   .navigation-link {
@@ -794,10 +798,11 @@ footer {
     display: none;
   }
 
-  /* .hidden-desktop {
-    display: none;
-  } */
-
+  .logo-container > a > img {
+    height: 100px;
+    position: relative;
+    top: -48px;
+  }
 }
 
 .container1:hover,
