@@ -59,6 +59,18 @@
     color: #ffffff;
     margin-top: 50px;
   }
+  .big-container > div {
+    margin-top: 25%;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .big-container h2 {
+    margin-bottom: 10px;
+  }
+  .big-container p {
+    color: grey;
+
+  }
   .container1 {
     height: 300px;
     background-repeat: no-repeat;
@@ -68,13 +80,14 @@
     background-image: url('../assert/images/header_image1.png');
   }
   .container > div {
-    margin-top: 20%;
+    /* position: relative; */
     padding: 20px;
   }
-  .container h2  {
+  /* .container h2  {
     font-size: 2rem;
-    margin-bottom: 15px;
-  }
+    /* margin-top: 9rem; */
+    /* margin-bottom: 15px; */
+  } */
   .container p {
     color: lightgrey;
     font-weight: bolder;
@@ -85,6 +98,7 @@
     height: 300px;
     background-repeat: no-repeat;
     background-position: center;
+    background: linear-gradient(left, rgba(0,0,0,0.65) 0%, rgba(255,255,255,0) 48%, rgba(2,2,2,1) 100%);
     margin: 10px;
   }
   .container3 {
@@ -92,9 +106,16 @@
     height: 300px;
     background-repeat: no-repeat;
     background-position: center;
+    background: linear-gradient(left, rgba(0,0,0,0.65) 0%, rgba(255,255,255,0) 48%, rgba(2,2,2,1) 100%);
+
+    /* background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)); */
+    /* background-color: black; */
     margin: 10px;
   }
-  
+  .container {
+    /* background-image: linear-gradient(rgb(245, 228, 228), grey); */
+
+  }
   .latest-container {
     display: flex;
     flex-direction: column;
@@ -338,7 +359,7 @@
 
   @media (min-width:770px){
     .header-images-container {
-      height: auto !important;
+      height: 500px;
       display: grid;
       grid-template-columns: 70% 1fr;
       grid-template-rows: repeat(2,30%);
@@ -347,7 +368,8 @@
     }
     .container1 {
       grid-area: 1/1/3/2;
-      border: 2px solid red;
+      height: 425px;
+      /* border: 2px solid red; */
     }
     .container-display{
       grid-area: 1/2/2/3;
@@ -358,11 +380,41 @@
     }
     .container2{
       grid-area: 1/2/2/3;
-      border: 2px solid red;
+      /* border: 2px solid red; */
+      height: calc(405px/2);
     }
     .container3{
       grid-area: 2/2/3/3;
-      border: 2px solid red;
+      /* border: 2px solid red; */
+      height: calc(405px/2);
+    }
+    .container > div {
+      margin-top: 60px;
+    }
+    .container > div h2 {
+      font-size: 1.2rem;
+      margin-bottom: 10px;
+    }
+    .container > div p {
+      font-size: 14px;
+      color: grey;
+      font-weight: bold;
+    }
+    .big-container > div {
+      margin-top: 17rem;
+      /* border: 1px solid black; */
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+    .big-container h2 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+    }
+    .big-container p {
+      font-size: 14px;
+      color: grey;
+      font-weight: bold;
+    
     }
     .hidden-desktop{
       display: none;
@@ -445,3 +497,10 @@
     }
 }
 
+@media (max-width: 770px) {
+  .container h2  {
+    font-size: 2rem;
+    margin-top: 9rem;
+    margin-bottom: 15px;
+  }
+}
