@@ -1,10 +1,12 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Positioning and Floating Elements
+# Responsive Design
 
-> This is the first project for the week 1.
-
-![screenshot](assets/screenshot/p1.PNG)
+> This is the first project for the week 2.
+> For Desktop
+![screenshot](./assert/screenshot/screenshot(desktop).png)
+> For Mobile
+![screenshot](./assert/screenshot/screenshot(mobile).png)
 
 This is a clone of a The Next Web made from scratch using sematic HTML and CSS3.
 
