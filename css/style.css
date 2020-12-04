@@ -369,6 +369,14 @@ img {
   background-size: cover;
 }
 
+.primary-navigation-container {
+  display: none;
+}
+
+.hidden-mobile {
+  display: none;
+}
+
 .card6 {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../assert/images/image10.png');
   background-repeat: no-repeat;
@@ -465,6 +473,7 @@ footer {
 @media (min-width: 768px) {
   .primary-navigation-container {
     padding: 10px 5px;
+    display: block;
     background-color: black;
     justify-content: space-between;
   }
@@ -715,7 +724,10 @@ footer {
     color: black;
   }
 
-  .hidden-mobile {
+  /* .hidden-image {
+    display: none;
+  } */
+  .hidden-desktop {
     display: none;
   }
 
@@ -735,9 +747,9 @@ footer {
     margin-bottom: 15px;
   }
 
-  .hidden-desktop {
+  /* .hidden-desktop {
     display: none;
-  }
+  } */
 
   .container1 {
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url('../assert/images/header_image1.png');
@@ -765,9 +777,9 @@ footer {
     margin-bottom: 25px;
   }
 
-  .hidden-middle {
+  /* .hidden-middle {
     display: none;
-  }
+  } */
 }
 
 @media (max-width: 1024px) {
@@ -779,9 +791,9 @@ footer {
     justify-content: flex-end;
   }
 
-  .hidden-desktop {
+  /* .hidden-desktop {
     display: none;
-  }
+  } */
 
 }
 
