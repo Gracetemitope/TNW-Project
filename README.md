@@ -4,13 +4,18 @@
 
 > This is the first project for the week 2.
 
-## For Desktop
+## ** For Desktop **
 
-![desktop](https://user-images.githubusercontent.com/58818795/101042646-452ac580-3532-11eb-8344-f0d1caf015e6.png)
+![desktop](./assert/screenshot/web_1024.png)
 
-## For Mobile
 
-![mobile](https://user-images.githubusercontent.com/58818795/101042680-4d830080-3532-11eb-8b34-7a854e367e06.png)
+## ** For Tablet **
+
+![Tablet](./assert/screenshot/teblet.png)
+
+## ** For Mobile **
+
+![Tablet](./assert/screenshot/mobile.png)
 
 This is a clone of a The Next Web made from scratch using sematic HTML and CSS3.
 
