@@ -470,9 +470,9 @@ footer {
   color: grey;
 }
 
-@media only screen and (min-width: 767px) {
+@media only screen and (min-width: 768px) {
   .primary-navigation-container {
-    padding: 10px 5px;
+    padding: 10px 20px;
     display: flex;
     background-color: black;
     justify-content: space-between;
@@ -555,7 +555,7 @@ footer {
   }
 
   .big-container h2 {
-    font-size: 2.9rem;
+    font-size: 2.5rem;
     margin-bottom: 20px;
   }
 
@@ -569,7 +569,7 @@ footer {
   }
 
   .container > div h2 {
-    font-family: 'Nanum Gothic', sans-serif;
+    font-family: 'Roboto Slab', 'Space Grotesk', sans-serif;
     margin-bottom: 10px;
     font-weight: bolder;
   }
@@ -657,7 +657,7 @@ footer {
   .card-container {
     display: flex;
     flex-wrap: wrap;
-    max-width: 90%;
+    max-width: 1400px;
     margin: 40px auto;
   }
 
@@ -749,7 +749,7 @@ footer {
   }
 }
 
-@media (max-width: 766px) {
+@media (max-width: 767px) {
   .hidden {
     display: none;
   }
@@ -795,7 +795,7 @@ footer {
   }
 }
 
-@media (min-width: 1023px) {
+@media (min-width: 1024px) {
   .card {
     max-width: calc(90% / 3);
     margin: 10px;
@@ -805,13 +805,9 @@ footer {
   .navbar-logo1 {
     display: none;
   }
-
-  .p-left {
-    padding-left: 20px;
-  }
 }
 
-@media (max-width: 1022px) {
+@media (max-width: 1023px) {
   .primary-navigation-container {
     justify-content: center;
   }
@@ -822,6 +818,10 @@ footer {
 
   .hidden {
     display: none;
+  }
+
+  .p-left {
+    padding-left: 70px;
   }
 }
 
