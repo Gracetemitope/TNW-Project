@@ -501,6 +501,13 @@ footer {
     width: 450px;
   }
 
+  .navbar-logo1 > img {
+    height: 100px;
+    max-width: 120px;
+    position: relative;
+    top: -50px;
+  }
+
   .navbar-logo > a > img {
     height: 50px;
     overflow: hidden;
@@ -735,13 +742,6 @@ footer {
     letter-spacing: 0.04em;
     line-height: 1;
     padding: 18px 0 0;
-  }
-
-  .navbar-logo1 > img {
-    height: 100px;
-    max-width: 120px;
-    position: relative;
-    top: -50px;
   }
 
   .navbar-logo2 {
