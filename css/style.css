@@ -470,7 +470,7 @@ footer {
   color: grey;
 }
 
-@media (min-width: 768px) {
+@media only screen and (min-width: 767px) {
   .primary-navigation-container {
     padding: 10px 5px;
     display: flex;
@@ -749,7 +749,7 @@ footer {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 766px) {
   .hidden {
     display: none;
   }
@@ -795,7 +795,7 @@ footer {
   }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1023px) {
   .card {
     max-width: calc(90% / 3);
     margin: 10px;
@@ -811,7 +811,7 @@ footer {
   }
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1022px) {
   .primary-navigation-container {
     justify-content: center;
   }
