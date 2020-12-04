@@ -11,7 +11,7 @@
 
 ## ** For Tablet **
 
-![Tablet](./assert/screenshot/teblet.png)
+![Tablet](./assert/screenshot/tablet.png)
 
 ## ** For Mobile **
 
